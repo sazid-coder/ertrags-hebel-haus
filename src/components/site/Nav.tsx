@@ -36,15 +36,15 @@ export function Nav() {
       }`}
     >
       <div className="shell">
-        <div className="grid h-[72px] grid-cols-[minmax(0,1fr)_auto] items-center gap-6 lg:h-20">
+        <div className="grid h-[72px] grid-cols-[auto_minmax(0,1fr)] items-center gap-6 lg:h-20">
           <a
             href="#top"
-            className="eyebrow min-w-0 truncate text-on-navy transition-colors hover:text-brass"
+            className="eyebrow shrink-0 whitespace-nowrap text-on-navy transition-colors hover:text-brass"
           >
             Ertragsmanufaktur
           </a>
 
-          <nav className="hidden items-center gap-7 xl:flex">
+          <nav className="ml-auto hidden items-center gap-7 xl:flex">
             {NAV.map((item) => (
               <a
                 key={item.href}
@@ -64,7 +64,7 @@ export function Nav() {
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Menü schließen" : "Menü öffnen"}
             aria-expanded={open}
-            className="flex h-11 w-11 shrink-0 flex-col items-center justify-center gap-[6px] xl:hidden"
+            className="ml-auto flex h-11 w-11 shrink-0 flex-col items-center justify-center gap-[6px] xl:hidden"
           >
             <span
               className={`h-px w-6 bg-on-navy transition-transform duration-300 ${open ? "translate-y-[3.5px] rotate-45" : ""}`}
