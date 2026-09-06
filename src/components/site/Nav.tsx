@@ -44,7 +44,7 @@ export function Nav() {
             Ertragsmanufaktur
           </a>
 
-          <nav className="hidden items-center gap-7 xl:flex">
+          <nav className="ml-auto hidden items-center gap-7 xl:flex">
             {NAV.map((item) => (
               <a
                 key={item.href}
@@ -64,7 +64,7 @@ export function Nav() {
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Menü schließen" : "Menü öffnen"}
             aria-expanded={open}
-            className="flex h-11 w-11 shrink-0 flex-col items-center justify-center gap-[6px] xl:hidden"
+            className="ml-auto flex h-11 w-11 shrink-0 flex-col items-center justify-center gap-[6px] xl:hidden"
           >
             <span
               className={`h-px w-6 bg-on-navy transition-transform duration-300 ${open ? "translate-y-[3.5px] rotate-45" : ""}`}

@@ -228,7 +228,7 @@ export function GewinnhebelSystem() {
     <section id="gewinnhebel-system" className="bg-navy py-24 lg:py-36">
       <div className="shell">
         <div className="grid gap-10 lg:grid-cols-12">
-          <div className="lg:col-span-5">
+          <div className="lg:col-span-6">
             <Reveal>
               <p className="eyebrow text-brass">Das Gewinnhebel-System</p>
               <h2 className="display-2 mt-6 text-on-navy">
