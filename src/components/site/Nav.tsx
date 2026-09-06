@@ -36,10 +36,10 @@ export function Nav() {
       }`}
     >
       <div className="shell">
-        <div className="grid h-[72px] grid-cols-[minmax(0,1fr)_auto] items-center gap-6 lg:h-20">
+        <div className="grid h-[72px] grid-cols-[auto_minmax(0,1fr)] items-center gap-6 lg:h-20">
           <a
             href="#top"
-            className="eyebrow min-w-0 truncate text-on-navy transition-colors hover:text-brass"
+            className="eyebrow shrink-0 whitespace-nowrap text-on-navy transition-colors hover:text-brass"
           >
             Ertragsmanufaktur
           </a>
