@@ -299,7 +299,7 @@ export function Ergebnisse() {
             {RESULTS.map((r, i) => (
               <div
                 key={r.label}
-                className={`reveal ${inView ? "reveal-in" : ""} border-b border-hairline py-10 pr-6 md:border-r md:not-nth-[2n]:border-r-0 lg:border-r lg:py-14 lg:not-nth-[3n]:border-r lg:nth-[3n]:border-r-0 lg:pr-10`}
+                className={`reveal ${inView ? "reveal-in" : ""} border-b border-hairline py-10 pr-6 md:border-r md:nth-[2n]:border-r-0 lg:py-14 lg:pr-10 lg:nth-[2n]:border-r lg:nth-[3n]:border-r-0`}
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
                 <p className="num-xl text-navy">{r.value}</p>
