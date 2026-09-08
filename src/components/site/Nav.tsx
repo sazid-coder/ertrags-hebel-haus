@@ -55,7 +55,7 @@ export function Nav() {
               </a>
             ))}
             <a href="#kontakt" className="btn btn-brass px-5 py-3 text-sm">
-              Gespräch vereinbaren
+              Kontakt aufnehmen
             </a>
           </nav>
 
@@ -100,7 +100,7 @@ export function Nav() {
             onClick={() => setOpen(false)}
             className="btn btn-brass mt-6 w-full"
           >
-            Gespräch vereinbaren
+            Kontakt aufnehmen
           </a>
         </div>
       </div>

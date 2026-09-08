@@ -46,8 +46,8 @@ function Index() {
         <FuerWen />
         <Warum />
         <Founder />
-        <WieWirArbeiten />
         <Ergebnisse />
+        <WieWirArbeiten />
         <FinalCta />
       </main>
       <Footer />

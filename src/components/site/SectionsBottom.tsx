@@ -30,12 +30,12 @@ const PRINCIPLES = [
   {
     n: "05",
     title: "Umsetzung statt Übergabe",
-    text: "Unsere Arbeit endet nicht mit einer Präsentation, sondern mit einer messbaren Veränderung.",
+    text: "Unsere Arbeit endet nicht mit einer Präsentation. Wir begleiten die Umsetzung und machen die Wirkung, wo möglich, messbar.",
   },
   {
     n: "06",
     title: "Skin in the Game",
-    text: "Wir stehen für die wirtschaftliche Wirkung unserer Arbeit ein – nicht für die Anzahl der Folien.",
+    text: "Wo Wirkung sauber messbar ist, kann ein Teil unserer Vergütung an den tatsächlich realisierten Erfolg gekoppelt werden.",
   },
 ];
 
@@ -110,7 +110,7 @@ export function Founder() {
           </h2>
         </Reveal>
 
-        <div className="mt-16 grid gap-12 lg:mt-20 lg:grid-cols-12 lg:gap-16">
+        <div className="mt-14 grid gap-12 lg:mt-16 lg:grid-cols-12 lg:gap-16">
           <Reveal className="lg:col-span-5">
             <div className="overflow-hidden bg-secondary">
               <img
@@ -130,20 +130,17 @@ export function Founder() {
 
           <div className="lg:col-span-6 lg:col-start-7">
             <Reveal delay={100}>
-              <p className="lead text-muted-foreground">
-                Eric Voigt hat Unternehmen geführt, verändert und wirtschaftlich neu
-                aufgestellt – in operativer Verantwortung, nicht aus der Distanz.
-              </p>
+              <p className="lead text-muted-foreground">Die Methode folgt Erfahrung aus operativer Verantwortung – nicht einer theoretischen Beratungslogik.</p>
             </Reveal>
 
             <Reveal delay={180}>
               <ul className="mt-10">
                 {[
-                  "Operative Unternehmensführung",
+                  "Operative Führung",
                   "Transformation",
                   "Turnaround",
                   "Post-Merger-Integration",
-                  "Private-Equity-geprägte Wertsteigerung",
+                  "Private Equity",
                 ].map((item, i) => (
                   <li
                     key={item}
@@ -161,16 +158,9 @@ export function Founder() {
             </Reveal>
 
             <Reveal delay={240}>
-              <blockquote className="mt-12 bg-navy p-8 text-2xl leading-tight font-semibold tracking-tight text-on-navy sm:text-3xl lg:p-10 lg:text-[2.25rem]">
-                Private Equity bezahlt nicht für gute Ratschläge.
-                <span className="text-brass"> Es bezahlt für Ergebnisse.</span>
+              <blockquote className="mt-10 border-l-2 border-brass pl-6 text-2xl leading-tight font-semibold tracking-tight text-navy sm:text-3xl">
+                Private-Equity-Disziplin. Mittelstandsrealität. Umsetzungskraft.
               </blockquote>
-              <p className="mt-8 leading-relaxed text-muted-foreground">
-                Diese Denkweise übersetzt die Ertragsmanufaktur in die Realität
-                inhabergeführter Unternehmen: mit der gleichen Disziplin in der Analyse und
-                Priorisierung – aber mit Respekt für gewachsene Strukturen, begrenzte
-                Ressourcen und das laufende Tagesgeschäft.
-              </p>
             </Reveal>
           </div>
         </div>
@@ -184,14 +174,10 @@ export function Founder() {
 /* ------------------------------------------------------------------ */
 
 const WORK = [
-  "Wir beginnen mit dem Unternehmen, nicht mit unserem Angebot.",
-  "Wir nutzen vorhandene Informationen, bevor wir neue Arbeit erzeugen.",
-  "Wir unterscheiden Symptome von Ursachen.",
-  "Wir sprechen Klartext – ohne das Unternehmen schlechtzureden.",
-  "Wir machen wirtschaftliche Wirkung sichtbar.",
-  "Wir setzen Prioritäten.",
-  "Wir arbeiten mit dem Unternehmen, nicht gegen das Tagesgeschäft.",
-  "Wenn Spezialwissen gebraucht wird, holen wir Spezialisten dazu.",
+  "Unternehmen verstehen",
+  "Evidenz prüfen",
+  "Prioritäten setzen",
+  "Umsetzung begleiten",
 ];
 
 export function WieWirArbeiten() {
@@ -242,8 +228,9 @@ export function WieWirArbeiten() {
         </ol>
 
         <Reveal>
-          <div className="mt-16 max-w-4xl lg:mt-24">
-            <p className="text-2xl leading-tight font-semibold tracking-tight text-navy sm:text-3xl lg:text-[2.75rem]">
+          <div className="mt-16 grid gap-10 lg:mt-24 lg:grid-cols-12">
+            <p className="display-3 lg:col-span-4">Nicht alles verändern. <span className="text-brass">Das Richtige verändern.</span></p>
+            <p className="text-2xl leading-tight font-semibold tracking-tight text-navy sm:text-3xl lg:col-span-7 lg:col-start-6 lg:text-[2.75rem]">
               Empathie öffnet die Tür.
               <br />
               Evidenz trägt die Empfehlung.
@@ -262,12 +249,10 @@ export function WieWirArbeiten() {
 /* ------------------------------------------------------------------ */
 
 const RESULTS = [
-  { value: "€4,7 Mio.", label: "jährliche Kostensenkung", lever: "Kosten · Einkauf · Operations" },
-  { value: "12 %", label: "Materialkosten reduziert", lever: "Kosten · Einkauf · Operations" },
-  { value: "€2,4 Mio.", label: "Working Capital freigesetzt", lever: "Liquidität · Bestand · Cash Conversion" },
-  { value: "65 % → 95 %", label: "Liefertreue", lever: "Prozesse · Lieferfähigkeit · Kundenbindung" },
-  { value: "1 Mio. → 11,5 Mio.", label: "Einheiten skaliert", lever: "Prozesse · Kapazität · Skalierbarkeit" },
-  { value: "+18 %", label: "Margenverbesserung", lever: "Marge · Kosten · kommerzielle Steuerung" },
+  { value: "€4,7 Mio.", label: "jährliche Kostensenkung" },
+  { value: "€2,4 Mio.", label: "Working Capital freigesetzt" },
+  { value: "65 → 95 %", label: "Liefertreue" },
+  { value: "1 Mio. → 11,5 Mio.", label: "Produktionskapazität ausgebaut" },
 ];
 
 export function Ergebnisse() {
@@ -295,19 +280,16 @@ export function Ergebnisse() {
         </div>
 
         <div ref={ref} className="mt-16 border-t border-hairline lg:mt-24">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid md:grid-cols-2">
             {RESULTS.map((r, i) => (
               <div
                 key={r.label}
-                className={`reveal ${inView ? "reveal-in" : ""} border-b border-hairline py-10 pr-6 md:border-r md:nth-[2n]:border-r-0 lg:py-14 lg:pr-10 lg:nth-[2n]:border-r lg:nth-[3n]:border-r-0`}
+                className={`reveal ${inView ? "reveal-in" : ""} border-b border-hairline py-12 pr-6 md:border-r md:nth-[2n]:border-r-0 lg:py-20 lg:pr-10`}
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
-                <p className="num-xl text-navy">{r.value}</p>
+                <p className="text-[clamp(3rem,7vw,6.5rem)] leading-[0.9] font-semibold text-navy tabular-nums">{r.value}</p>
                 <p className="mt-4 text-lg font-semibold tracking-tight text-navy/80">
                   {r.label}
-                </p>
-                <p className="mt-6 text-xs font-semibold tracking-[0.1em] uppercase text-brass">
-                  {r.lever}
                 </p>
               </div>
             ))}
@@ -354,23 +336,20 @@ export function FinalCta() {
         <Reveal>
           <p className="eyebrow flex items-center gap-4 text-brass">
             <span className="h-px w-10 bg-brass" />
-            Gespräch vereinbaren
+             Kontakt
           </p>
           <h2 className="display-2 mt-8 max-w-4xl text-on-navy">
-            Vielleicht fehlt Ihrem Unternehmen nicht die nächste Idee.
-            <br />
-            <span className="text-brass">Sondern der richtige Hebel.</span>
+             Lassen Sie uns über Ihr Unternehmen sprechen.
           </h2>
           <p className="lead mt-8 max-w-2xl text-on-navy-muted">
-            Lassen Sie uns gemeinsam herausfinden, wo wirtschaftliches Potenzial liegt und
-            welcher Schritt jetzt den größten Unterschied macht.
+            Klar, vertraulich und auf Augenhöhe.
           </p>
           <div className="mt-12 flex flex-col gap-3 sm:flex-row">
             <a href="mailto:kontakt@ertragsmanufaktur.de" className="btn btn-brass">
-              Gespräch vereinbaren
+              Kontakt aufnehmen
             </a>
             <a href="#gewinnhebel-system" className="btn btn-outline-light">
-              Das Gewinnhebel-System kennenlernen
+              Gewinnhebel-Scan kennenlernen
             </a>
           </div>
         </Reveal>
