@@ -59,8 +59,7 @@ export function WasWirTun() {
                 Ergebnis messbar?
               </p>
               <p className="mt-6 text-[17px] leading-relaxed text-muted-foreground">
-                Dafür arbeiten wir mit fünf wirtschaftlichen Hebeln, die im Mittelstand
-                den größten Unterschied machen.
+                Dafür betrachten wir fünf zentrale wirtschaftliche Hebel.
               </p>
             </Reveal>
           </div>
@@ -126,6 +125,13 @@ export function WasWirTun() {
             </div>
           </Reveal>
         </div>
+        <Reveal>
+          <div className="mt-20 border-t border-hairline pt-12 lg:mt-28 lg:pt-16">
+            <p className="display-2 max-w-5xl">
+              Umsatz macht beschäftigt. <span className="text-brass">Gewinn macht frei.</span>
+            </p>
+          </div>
+        </Reveal>
       </div>
     </section>
   );
@@ -268,7 +274,7 @@ export function GewinnhebelSystem() {
 
           <div className="lg:col-span-4 lg:col-start-9">
             <div className="sticky top-28 border-t border-hairline-dark pt-8">
-              <p className="eyebrow text-brass">Die Formel</p>
+              <p className="eyebrow text-brass">Ertragsmanufaktur Methodik</p>
               <ul className="mt-8 space-y-4">
                 {["Symptom", "Hypothese", "Evidenz", "Priorität", "Umsetzung"].map(
                   (word, i) => (
@@ -288,9 +294,33 @@ export function GewinnhebelSystem() {
                   ),
                 )}
               </ul>
+              <p className="mt-10 border-l-2 border-brass pl-5 text-2xl leading-tight font-semibold text-on-navy">
+                Der Rückspiegel ist kein Lenkrad.
+              </p>
             </div>
           </div>
         </div>
+
+        <Reveal>
+          <div className="mt-20 border-y border-hairline-dark py-10 lg:mt-28 lg:py-12">
+            <div className="grid gap-7 lg:grid-cols-12 lg:items-start">
+              <div className="lg:col-span-3">
+                <p className="eyebrow text-brass">Fünf wirtschaftliche Hebel</p>
+                <p className="mt-4 text-sm leading-relaxed text-on-navy-muted">
+                  Jeder Befund wird dort eingeordnet, wo wirtschaftliche Wirkung entsteht.
+                </p>
+              </div>
+              <ol className="grid gap-px bg-hairline-dark sm:grid-cols-2 lg:col-span-9 lg:grid-cols-5">
+                {["Preis & Marge", "Kosten & Einkauf", "Liquidität", "Prozesse & Unternehmerzeit", "Positionierung & Kundenstruktur"].map((lever, i) => (
+                  <li key={lever} className="bg-navy px-5 py-6">
+                    <span className="eyebrow text-brass">{String(i + 1).padStart(2, "0")}</span>
+                    <p className="mt-3 text-base leading-snug font-semibold text-on-navy">{lever}</p>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </Reveal>
 
         <Reveal>
           <div className="mt-20 border-t border-hairline-dark pt-12 lg:mt-28">
@@ -315,27 +345,27 @@ export function GewinnhebelSystem() {
 const SERVICES = [
   {
     n: "01",
-    name: "Der Gewinnhebel-Scan",
-    claim: "Eine erste Standortbestimmung.",
-    text: "Ein strukturierter erster Blick auf das Unternehmen: Welche Symptome sind sichtbar, welchen Hebeln lassen sie sich zuordnen und wo lohnt es sich, genauer hinzusehen.",
+    name: "Gewinnhebel-Scan",
+    benefit: "Wirtschaftliche Ansatzpunkte schnell erkennen.",
+    when: "Wenn eine erste Standortbestimmung und klare Orientierung gebraucht werden.",
   },
   {
     n: "02",
-    name: "Das Ertrags-Audit",
-    claim: "Klarheit darüber, wo wirtschaftliches Potenzial tatsächlich liegt.",
-    text: "Die vertiefte Analyse entlang der fünf Gewinnhebel – auf Basis vorhandener Zahlen und Prozesse. Ergebnis: belegte Hebel, priorisiert nach wirtschaftlicher Wirkung.",
+    name: "Ertrags-Audit",
+    benefit: "Potenziale belegen und nach Wirkung priorisieren.",
+    when: "Wenn Vermutungen durch Zahlen und Prozesse geprüft werden sollen.",
   },
   {
     n: "03",
-    name: "Der Gewinnhebel-Sprint",
-    claim: "Vom erkannten Hebel zur messbaren Umsetzung.",
-    text: "Fokussierte Umsetzung entlang der priorisierten Hebel: klare Verantwortlichkeiten, kurze Takte, messbare wirtschaftliche Wirkung im laufenden Geschäft.",
+    name: "Gewinnhebel-Sprint",
+    benefit: "Einen priorisierten Hebel konsequent umsetzen.",
+    when: "Wenn aus einer belegten Priorität konkrete Wirkung werden soll.",
   },
   {
     n: "04",
     name: "Unternehmens-Beirat",
-    claim: "Erfahrung von außen. Regelmäßig am Tisch.",
-    text: "Kontinuierliche Begleitung der Unternehmensführung: wirtschaftliche Perspektive, unbequeme Fragen und Verlässlichkeit in der Nachverfolgung.",
+    benefit: "Wirtschaftliche Disziplin dauerhaft verankern.",
+    when: "Wenn die Unternehmensführung kontinuierliche Begleitung auf Augenhöhe sucht.",
   },
 ];
 
@@ -370,13 +400,14 @@ export function Leistungen() {
                       {s.name}
                     </h3>
                     <p className="mt-3 text-lg leading-snug font-semibold text-navy/70 lg:text-xl">
-                      {s.claim}
+                      {s.benefit}
                     </p>
                   </div>
                   <div className="lg:col-span-5">
-                    <p className="leading-relaxed text-muted-foreground">{s.text}</p>
+                    <p className="eyebrow text-muted-foreground">Wann es sinnvoll ist</p>
+                    <p className="mt-3 leading-relaxed text-muted-foreground">{s.when}</p>
                     <span className="mt-6 inline-flex items-center gap-3 text-sm font-semibold text-navy transition-colors group-hover:text-brass">
-                      Mehr zum {s.name}
+                      Mehr erfahren
                       <span className="transition-transform duration-500 group-hover:translate-x-1">
                         →
                       </span>
@@ -387,6 +418,12 @@ export function Leistungen() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal>
+          <p className="mt-20 border-l-2 border-brass pl-6 text-3xl leading-tight font-semibold lg:mt-28 lg:text-5xl">
+            Nicht jeder Umsatz ist guter Umsatz.
+          </p>
+        </Reveal>
 
         <Reveal>
           <div className="mt-16 grid gap-8 lg:mt-24 lg:grid-cols-12">
@@ -469,23 +506,22 @@ export function FuerWen() {
           ))}
         </div>
 
-        <div className="mt-20 grid gap-12 lg:grid-cols-12 lg:gap-10">
-          <Reveal className="lg:col-span-5">
+        <div className="mt-16 grid gap-10 lg:mt-20 lg:grid-cols-12">
+          <Reveal className="lg:col-span-12">
             <p className="eyebrow text-navy/60">Typische Branchen</p>
-            <ul className="mt-6">
+            <ul className="mt-5 flex flex-wrap gap-2">
               {BRANCHEN.map((b) => (
                 <li
                   key={b}
-                  className="flex items-start gap-4 border-b border-navy/10 py-4 text-[17px] text-navy/80"
+                  className="border border-navy/15 px-3 py-2 text-xs font-semibold text-navy/65"
                 >
-                  <span className="mt-2 h-px w-4 shrink-0 bg-brass" />
                   {b}
                 </li>
               ))}
             </ul>
           </Reveal>
 
-          <Reveal delay={120} className="lg:col-span-6 lg:col-start-7">
+          <Reveal delay={120} className="lg:col-span-8 lg:col-start-5">
             <div className="h-full bg-navy p-8 lg:p-12">
               <p className="eyebrow text-brass">Klarheit</p>
               <h3 className="display-3 mt-5 text-on-navy">

@@ -25,9 +25,9 @@ export function Hero() {
             </Reveal>
 
             <Reveal delay={240}>
-              <p className="lead mt-9 max-w-xl text-on-navy-muted">
-                Wir arbeiten mit inhabergeführten mittelständischen Unternehmen daran,
-                mehr aus dem Unternehmen herauszuholen, das sie bereits aufgebaut haben.
+              <p className="mt-9 max-w-2xl border-l-2 border-brass pl-6 text-xl leading-snug font-semibold text-on-navy-muted sm:text-2xl">
+                Private-Equity-Wertsteigerungslogik für inhabergeführte mittelständische
+                Unternehmen.
               </p>
             </Reveal>
 
