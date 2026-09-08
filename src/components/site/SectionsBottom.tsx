@@ -230,7 +230,7 @@ export function WieWirArbeiten() {
         <Reveal>
           <div className="mt-16 grid gap-10 lg:mt-24 lg:grid-cols-12">
             <p className="display-3 lg:col-span-4">Nicht alles verändern. <span className="text-brass">Das Richtige verändern.</span></p>
-            <p className="text-2xl leading-tight font-semibold tracking-tight text-navy sm:text-3xl lg:text-[2.75rem]">
+            <p className="text-2xl leading-tight font-semibold tracking-tight text-navy sm:text-3xl lg:col-span-7 lg:col-start-6 lg:text-[2.75rem]">
               Empathie öffnet die Tür.
               <br />
               Evidenz trägt die Empfehlung.

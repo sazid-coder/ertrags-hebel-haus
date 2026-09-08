@@ -537,12 +537,6 @@ export function FuerWen() {
                 voraus – und die Bereitschaft, wirtschaftliche Wirkung an Zahlen zu
                 messen.
               </p>
-              <div className="rule-dark my-10" />
-              <p className="text-2xl leading-tight font-semibold tracking-tight text-on-navy sm:text-3xl">
-                Nicht alles verändern.
-                <br />
-                <span className="text-brass">Das Richtige verändern.</span>
-              </p>
             </div>
           </Reveal>
         </div>
