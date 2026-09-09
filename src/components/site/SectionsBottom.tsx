@@ -47,7 +47,7 @@ export function Warum() {
           <Reveal className="lg:col-span-6">
             <p className="eyebrow text-brass">Warum Ertragsmanufaktur</p>
             <h2 className="display-2 mt-6 text-on-navy">
-              Weil gute Ratschläge allein noch kein Ergebnis sind.
+              Gute Ratschläge verändern noch keine Zahlen.
             </h2>
           </Reveal>
         </div>
