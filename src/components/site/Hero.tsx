@@ -59,23 +59,6 @@ export function Hero() {
           </div>
         </div>
 
-        <Reveal delay={120}>
-          <div className="mt-16 border-t border-hairline-dark pt-12 pb-20 lg:mt-24 lg:pb-28">
-            <div className="grid gap-8 lg:grid-cols-12 lg:gap-10">
-              <div className="lg:col-span-4">
-                <p className="eyebrow text-brass">Das Gewinnhebel-System</p>
-                <h2 className="display-3 mt-4 text-on-navy">
-                  Vom Symptom zum wirtschaftlichen Hebel.
-                </h2>
-              </div>
-              <p className="text-[17px] leading-relaxed text-on-navy-muted lg:col-span-6 lg:col-start-7 lg:text-lg">
-                Wir identifizieren, wo wirtschaftliches Potenzial liegt, priorisieren die
-                Hebel mit der größten Wirkung und begleiten die Umsetzung dort, wo sie
-                sich rechnet.
-              </p>
-            </div>
-          </div>
-        </Reveal>
       </div>
     </section>
   );
